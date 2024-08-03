@@ -1,0 +1,181 @@
+
+/*지울것*/
+
+
+/* B_Title */
+#B_TITLE {
+    height: 60px;
+    
+}
+
+#B_TITLE .inner {
+    display: flex;
+    justify-content: center;
+    gap:40px;
+}
+
+#B_TITLE .inner > img {
+ 
+    
+}
+#B_TITLE .inner .list {
+    display: flex;
+    
+    
+    list-style-type: none;
+}
+
+#B_TITLE .inner .list:first-child {
+    margin-left: 0;
+    padding-left: 0;
+}
+#B_TITLE .inner .list > li {
+    margin: 0 10px; /* 좌우 간격 설정 */
+}
+
+#B_TITLE .inner .list > li > a {
+    margin: auto 5px;
+    text-decoration: none; /* 기본 링크 스타일 제거 (필요시) */
+    color: inherit; /* 링크 텍스트 색상 상속 (필요시) */
+}
+
+#B_TITLE .inner .Icon {
+    display: flex;
+    margin: auto 0;
+}
+#B_TITLE .inner .Icon > span{
+    margin: 5px;
+}
+#B_TITLE .inner .Box {
+    text-align: center;
+    height: 20px;
+    width: 65px;
+    border-radius: 30%;
+    padding : 15px;
+    border-radius: 10px;
+    background-color: rgb(49, 49, 255);
+    color:white;
+    
+}
+
+#banner{
+    width: 1920px;
+    height: 660px;
+    background-size: cover;
+    background-image: url("/kbs/images/banner_image.jpg");
+    margin: 0 auto;
+}
+#banner .banner_text{
+    padding-top: 15ch;
+    width: 600px;
+    height: 50p;
+    margin-left: 400px;    
+
+    
+}
+#banner .banner_text > *{
+    
+    display: block;
+}
+#banner .banner_text .s1{
+    color:white;
+    margin: 5px auto;
+    font-size: 35px ;
+    font-weight: bold;
+
+    
+}
+
+#banner .banner_text .s2{
+    color:white;
+    margin: 5px auto;
+    font-size: 19px ;
+    
+}
+
+#banner .banner_text .text{
+    display: flex;
+    color:white;
+    width: 174px;
+    height: 60px;
+    background-color:blue;
+    border-radius: 30%;
+    padding : auto;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(49, 49, 255);
+}
+
+#Ticket{
+    border:1px solid red;
+    height: 200px;
+    background-color: wheat;
+}
+#Ticket .inner{
+    border:1px solid orange;
+    width: 80%;
+    height: 80%;
+    margin: auto auto auto 10%;
+    display: flex;
+}
+#Ticket .inner .index{
+    width: 20%;
+    height: 100%;
+    display:flex;
+    border:  2px solid yellow;
+    margin-left: 20%;
+    flex-direction: column;
+    
+    
+}
+#Ticket .inner .index span{
+    margin:auto 0;
+}
+#Ticket .inner .index span:first-child::before {
+    display: none; /* 첫 번째 span 요소의 가상 요소를 숨깁니다 */
+}
+
+#Ticket .inner .index span::before {
+    content: "----------------"; /* 가상 요소에 표시될 텍스트 */
+    display: block; /* 가상 요소를 블록 레벨 요소로 표시합니다 */
+    transform: skewX(180deg); /* X축으로 180도 기울임 변환을 적용합니다 */
+}
+#Ticket .inner .buy{
+    margin: auto 0;
+}
+#Ticket .inner .buy .Ticket1{
+    
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#Ticket .inner .buy .Ticket2{
+    display: flex;
+}
+#Ticket .inner .buy .Ticket2 .box1{
+    display: inline-block;
+    width: 180px;
+    height: inherit;
+    border: 1px solid gray;
+    color:gray;
+    margin:6px;
+    
+}
+.box1 .o {
+    opacity: 0.2;
+}
+#Ticket .inner .buy .Ticket2 .box1 span{
+    text-align: center;
+}
+#Ticket .inner .buy .Ticket2 .box2{
+    display: inline-block;
+    width: 90px;
+    padding-top: 10px;
+    background-color: blue;
+    color:white;
+    text-align: center;
+    border-radius: 10%;
+
+}
